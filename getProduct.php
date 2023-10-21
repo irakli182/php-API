@@ -1,9 +1,13 @@
 <?php
 
-$servername = "sql306.byethost18.com";
-$username = "b18_35271351";
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, POST');
+header("Access-Control-Allow-Headers: X-Requested-With");
+
+$servername = "localhost";
+$username = "id21434775_irakli";
 $password = "Mariamiiko12.";
-$dbname = "b18_35271351_scandiweb";
+$dbname = "id21434775_scandiweb";
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -19,5 +23,5 @@ $result = $conn->query($sql);
 // Return the data as JSON
 $data = $result->fetchAll(PDO::FETCH_ASSOC);
 echo json_encode($data);
-
+exit()
 ?>
