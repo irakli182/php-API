@@ -4,9 +4,9 @@ header('Access-Control-Allow-Origin: *');
 
 // Establish a database connection (replace with your database credentials)
 $servername = "localhost";
-$username = "id21434775_irakli";
-$password = "Mariamiiko12.";
-$dbname = "id21434775_scandiweb";
+$username = "root";
+$password = "";
+$dbname = "scandiweb";
 
 // Create a connection
 $conn = new mysqli($servername, $username, $password, $dbname);

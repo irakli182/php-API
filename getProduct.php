@@ -5,9 +5,9 @@ header('Access-Control-Allow-Methods: GET, POST');
 header("Access-Control-Allow-Headers: X-Requested-With");
 
 $servername = "localhost";
-$username = "id21434775_irakli";
-$password = "Mariamiiko12.";
-$dbname = "id21434775_scandiweb";
+$username = "root";
+$password = "";
+$dbname = "scandiweb";
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);

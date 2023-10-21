@@ -8,9 +8,10 @@ $skuData = json_decode($data, true);
 if ($skuData !== null) {
 
     $servername = "localhost";
-    $username = "id21434775_irakli";
-    $password = "Mariamiiko12.";
-    $dbname = "id21434775_scandiweb";
+    $username = "root";
+    $password = "";
+    $dbname = "scandiweb";
+
     try {
         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
