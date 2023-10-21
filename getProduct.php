@@ -4,10 +4,10 @@ header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST');
 header("Access-Control-Allow-Headers: X-Requested-With");
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "scandiweb";
+$servername = "nuepp3ddzwtnggom.chr7pe7iynqr.eu-west-1.rds.amazonaws.com";
+$username = "pagzvkjacwgbtvf8";
+$password = "bfvlqujm2cq4dr0f";
+$dbname = "hhhgnlz30ykkfm9z";
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);

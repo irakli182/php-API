@@ -3,10 +3,10 @@
 header('Access-Control-Allow-Origin: *');
 
 // Establish a database connection (replace with your database credentials)
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "scandiweb";
+$servername = "nuepp3ddzwtnggom.chr7pe7iynqr.eu-west-1.rds.amazonaws.com";
+$username = "pagzvkjacwgbtvf8";
+$password = "bfvlqujm2cq4dr0f";
+$dbname = "hhhgnlz30ykkfm9z";
 
 // Create a connection
 $conn = new mysqli($servername, $username, $password, $dbname);
