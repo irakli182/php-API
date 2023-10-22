@@ -1,6 +1,10 @@
 <?php
 
-header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
+header("Access-Control-Allow-Headers: Content-Type");
+header("Access-Control-Allow-Credentials: true");
+header("Access-Control-Max-Age: 3600");
 
 $data = file_get_contents('php://input');
 $skuData = json_decode($data, true);
