@@ -6,7 +6,6 @@ header("Access-Control-Allow-Headers: Content-Type");
 header("Access-Control-Allow-Credentials: true");
 header("Access-Control-Max-Age: 3600");
 
-
 $servername = "sql11.freemysqlhosting.net";
 $username = "sql11654711";
 $password = "RA23f72DPL";
@@ -18,12 +17,9 @@ try {
 } catch(PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
-
-// Fetch data from the database
-$sql = "SELECT * FROM products"; // Adjust the query according to your database structure
+$sql = "SELECT * FROM products"; 
 $result = $conn->query($sql);
 
-// Return the data as JSON
 $data = $result->fetchAll(PDO::FETCH_ASSOC);
 echo json_encode($data);
 exit()

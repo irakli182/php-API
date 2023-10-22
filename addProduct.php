@@ -29,10 +29,7 @@ if ($skuData !== null) {
         $length = $skuData['length'];
         $weight = $skuData['weight'];
 
-        // Create a prepared statement
         $stmt = $conn->prepare("INSERT INTO products (sku, name, price, size, height, width, length, weight) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-
-        // Bind the parameters and execute the statement
         $stmt->execute([$sku, $name, $price, $size, $height, $width, $length, $weight]);
 
         echo "Data inserted successfully!";
