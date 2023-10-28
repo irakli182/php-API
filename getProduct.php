@@ -6,10 +6,10 @@ header("Access-Control-Allow-Headers: Content-Type");
 header("Access-Control-Allow-Credentials: true");
 header("Access-Control-Max-Age: 3600");
 
-$servername = "nuepp3ddzwtnggom.chr7pe7iynqr.eu-west-1.rds.amazonaws.com";
-$username = "pagzvkjacwgbtvf8";
-$password = "bfvlqujm2cq4dr0f";
-$dbname = "hhhgnlz30ykkfm9z";
+$servername = "localhost";
+$username = "id21429255_irakli";
+$password = "Mariamiiko12.";
+$dbname = "id21429255_scandiweb";
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
